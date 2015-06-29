@@ -1,0 +1,10 @@
+<resources>
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="MaterialNavigationDrawerTheme">
+		<item name="colorPrimary">#8bc34a</item>
+		<item name="colorPrimaryDark">#558b2f</item>
+		<item name="colorAccent">#FFFFFF</item>
+		<item name="singleAccount">true</item><!-- Remove the change account button -->
+	</style>
+
+</resources>

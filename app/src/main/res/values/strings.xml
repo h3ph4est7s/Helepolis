@@ -1,0 +1,18 @@
+<resources>
+	<string name="app_name">Helepolis</string>
+	<string name="title_activity_main_root">Main Screen</string>
+	<string name="rpwntext">Router\nPwn3r</string>
+	<string name="username_text">Username</string>
+	<string name="password_text">Password</string>
+	<string name="login_text">Login</string>
+	<string name="ipadd_text">IP Address:</string>
+	<string name="pending_text">Pending…</string>
+	<string name="router_pwner_title">Router Pwn3r</string>
+	<string name="home_section_text">Home</string>
+	<string name="settings_section_text">Settings</string>
+	<string name="usr_pwd_check_text">Please input username/password first.</string>
+	<string name="get_ip_provider">https://api.ipify.org/?format=raw</string>
+	<string name="get_ip_details_ripe">https://stat.ripe.net/data/address-space-usage/data.json?resource=</string>
+	<string name="username">panos</string>
+	<string name="password_hash">D9E6762DD1C8EAF6D61B3C6192FC408D4D6D5F1176D0C29169BC24E71C3F274AD27FCD5811B313D681F7E55EC02D73D499C95455B6B5BB503ACF574FBA8FFE85</string>
+</resources>
