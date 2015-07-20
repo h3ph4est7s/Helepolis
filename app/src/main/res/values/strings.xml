@@ -13,6 +13,10 @@
 	<string name="usr_pwd_check_text">Please input username/password first.</string>
 	<string name="get_ip_provider">https://api.ipify.org/?format=raw</string>
 	<string name="get_ip_details_ripe">https://stat.ripe.net/data/address-space-usage/data.json?resource=</string>
-	<string name="username">panos</string>
-	<string name="password_hash">D9E6762DD1C8EAF6D61B3C6192FC408D4D6D5F1176D0C29169BC24E71C3F274AD27FCD5811B313D681F7E55EC02D73D499C95455B6B5BB503ACF574FBA8FFE85</string>
+	<string name="repeat_password_text">Repeat pass</string>
+	<string name="add_user_btn_text">Create</string>
+	<string name="usr_pwd_rep_check_text">Please fill in all field.</string>
+<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

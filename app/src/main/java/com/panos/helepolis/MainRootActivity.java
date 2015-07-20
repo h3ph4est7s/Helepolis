@@ -3,6 +3,8 @@ package com.panos.helepolis;
 import android.content.Intent;
 import android.os.Bundle;
 import com.panos.helepolis.mainFragments.FragmentIndex;
+import com.panos.helepolis.mainFragments.FragmentSettings;
+
 import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
 import it.neokree.materialnavigationdrawer.elements.MaterialSection;
 
@@ -10,9 +12,6 @@ public class MainRootActivity extends MaterialNavigationDrawer {
 
 	@Override
 	public void init(Bundle savedInstanceState) {
-		FragmentIndex home = new FragmentIndex();
-		MaterialSection homeSection = newSection(getString(R.string.home_section_text), R.drawable.ic_menu_home, home);
-		MaterialSection settingsSection = newSection(getString(R.string.settings_section_text), R.drawable.ic_gear, home);
 		Intent intent = getIntent();
 		String username = intent.getStringExtra(MainLoginActivity.EXTRA_USERNAME);
 		Boolean firstRun = intent.getBooleanExtra(MainLoginActivity.EXTRA_FIRSTRUN, true);
@@ -22,12 +21,12 @@ public class MainRootActivity extends MaterialNavigationDrawer {
 		setDrawerHeaderImage(R.drawable.mat2);
 		setUsername(username);
 		//setUserEmail("My version build");
-		this.addSection(homeSection);
+		this.addSection(newSection(getString(R.string.home_section_text), R.drawable.ic_menu_home, new FragmentIndex()));
 		//this.addSection(newSection("Section 2",new FragmentIndex()));
 		//this.addSection(newSection("Section 3",R.drawable.ic_mic_white_24dp,new FragmentButton()).setSectionColor(Color.parseColor("#9c27b0")));
 		//this.addSection(newSection("Section",R.drawable.ic_hotel_grey600_24dp,new FragmentButton()).setSectionColor(Color.parseColor("#03a9f4")));
 		// create bottom section
-		this.addBottomSection(settingsSection);
+		this.addBottomSection(newSection(getString(R.string.settings_section_text), R.drawable.ic_gear, new FragmentSettings()));
 	}
 	@Override
 	protected void onStart() {
